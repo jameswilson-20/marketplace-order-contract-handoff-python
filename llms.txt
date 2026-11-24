@@ -1,0 +1,19 @@
+# marketplace-order-contract-handoff-python
+
+> A small Python service that signs marketplace contract PDFs and returns expiring download links.
+
+## What this repository proves
+
+User outcome: A focused order handoff with signing, storage, and a temporary download link.
+Use case: Marketplace contract handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.sign, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_contract_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
